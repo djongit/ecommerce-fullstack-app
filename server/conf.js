@@ -1,7 +1,7 @@
 
 const path = require('path');
-require('dotenv').config({path: path.join(__dirname, '.env')}); // explicitly attach .env file. 
-
+// require('dotenv').config({path: path.join(__dirname, '.env')}); // explicitly attach .env file. 
+require('doenv').config();
 module.exports = {
     PORT: process.env.PORT,
     DB: {
